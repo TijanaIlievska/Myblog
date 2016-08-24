@@ -2,23 +2,14 @@
 layout: default
 ---
 
-<div class="home">
+<html>
+<title>
+  Christmas Recipes
+</title>
+<body>
+<img alt="Christmas recipes" src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwipsM-8ldrOAhWGXBQKHQATBKYQjRwIBw&url=http%3A%2F%2Fwww.123rf.com%2Fphoto_28752770_stock-vector-stamp-with-text-christmas-recipes-inside-vector-illustration.html&bvm=bv.129759880,d.bGs&psig=AFQjCNFKwflasHwmCSfeBKRTVYHBPNCC5w&ust=1472132063917602">
+<input type="text" name="search" placeholder="Find a recipe.. ">
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-  <h3> HIIIIII</h3>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</body>
+</html>
