@@ -62,10 +62,11 @@ float:left;
 float:left;
 }
 .login {
-float: left;
+float: right;
 position:static;
 top: 180;
 right:90;
+margin:0;
 }
   
 </style>
@@ -73,7 +74,7 @@ right:90;
 </head>
 <body>
   <div id="bg">
-  <img alt="Christmas recipes" style="height:100px;width:200px;">
+  <img src="http://wac.475d.edgecastcdn.net/80475D/vrc-us/images/Hero_Holiday_Recipes_Logo_1600x400_tcm21-56079.jpg" alt="Christmas recipes" style="height:10%;width:20%;">
 
 <input type="text" id="g" name="search" placeholder="Find a recipe.. "/> 
 <input type="button" id="b" value="search"/>
@@ -83,7 +84,6 @@ right:90;
 
 <div class = "login">
 <form action="login.php" autocomplete="on">
-<h1>Log in</h1>
 <p>
 <label for="username" id="l">Username:</label>
 <input type="text" id="uname" placeholder="Username" name="username" required="required"><br></br>
@@ -91,6 +91,7 @@ right:90;
 <label for="pass" id="p">Password:</label>
 <input type="text" id="pass" placeholder="Password"
 name="pass" required="required">
+<input type="button" value="Log in" name="login"
 </form>
 </div>
 
