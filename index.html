@@ -26,6 +26,8 @@ layout: default
   }
   #bg
   {
+    
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiLqWpaf7UqZGhYuo12RcSyChXKmzGzC9_KrORIwQEhDWc2DQ2A);
     width: 800px;
     margin: 0 auto;
     text-align: left;
@@ -59,9 +61,11 @@ float:left;
 #l{
 float:left;
 }
-div{
-top: 99;
-left: 90;
+.login {
+float: left;
+position:static;
+top: 180;
+right:90;
 }
   
 </style>
@@ -69,12 +73,15 @@ left: 90;
 </head>
 <body>
   <div id="bg">
-  <img alt="Christmas recipes" style="height:100px;width:200px;" src="http://previews.123rf.com/images/carmenbobo/carmenbobo1406/carmenbobo140600005/28752770-Stamp-with-text-Christmas-recipes-inside-vector-illustration-Stock-Vector.jpg">
+  <img alt="Christmas recipes" style="height:100px;width:200px;">
 
 <input type="text" id="g" name="search" placeholder="Find a recipe.. "/> 
 <input type="button" id="b" value="search"/>
 
-<div>
+
+
+
+<div class = "login">
 <form action="login.php" autocomplete="on">
 <h1>Log in</h1>
 <p>
@@ -84,6 +91,7 @@ left: 90;
 <label for="pass" id="p">Password:</label>
 <input type="text" id="pass" placeholder="Password"
 name="pass" required="required">
+</form>
 </div>
 
 
@@ -102,4 +110,5 @@ name="pass" required="required">
 </div>
 </body>
 </html>
+
 
