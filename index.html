@@ -15,14 +15,19 @@ layout: default
   ul li
   {
     display:inline;
-    margin:5px;
-    float:left;
-    color:red;
-    font-size: 15;
+    position: relative;
+    margin:10px;
+    float:right;
+    font-size:25;
+    font-style: oblique;
+    font-family: cursive;
+    color:#CD5753;
+    bottom:10;
+
  }
   body
   {
-  text-align: center;  
+  text-align: center;
   }
 .button
 {
@@ -32,27 +37,27 @@ font: Sand;
 }
   #bg
   {
-    
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjiLqWpaf7UqZGhYuo12RcSyChXKmzGzC9_KrORIwQEhDWc2DQ2A);
+
+    background: url(http://images.all-free-download.com/images/graphiclarge/plain_white_background_211387.jpg);
     width: 800px;
     margin: 0 auto;
     text-align: left;
-  } 
+  }
  #g, #b
 {
 margin: 0;
 }
 #g
 {
-padding: 2px; 
-   font-size: 1em; 
-   line-height: 20px 
+padding: 2px;
+   font-size: 1em;
+   line-height: 20px
 }
 #b
 {
-text-indent: -99999px; 
-   width: 30px; 
-   height: 30px; 
+text-indent: -99999px;
+   width: 30px;
+   height: 30px;
 background: gray url(http://www.clker.com/cliparts/Y/x/X/j/U/f/search-button-without-text-hi.png) 0 0 no-repeat;
 margin: 0px;
    }
@@ -67,14 +72,38 @@ float:left;
 #l{
 float:left;
 }
-.login {
+.login_user {
 float: right;
-position:static;
-top: 180;
-right:90;
+position: relative;
+top:-50;
 margin:0;
+font-size:20;
 }
-  
+.login_pass
+{
+position: relative;
+top: -20;
+left:584;
+font-size:20;
+
+}
+.mapa
+{
+position:relative;
+left: 25%;
+top: 70;
+}
+.meni
+{
+border-style: solid;
+position:relative;
+top:40;
+border-color:#DBF76C;
+background-color:#DBF76C;
+
+}
+
+
 </style>
 
 </head>
@@ -82,43 +111,49 @@ margin:0;
   <div id="bg">
   <img src="http://wac.475d.edgecastcdn.net/80475D/vrc-us/images/Hero_Holiday_Recipes_Logo_1600x400_tcm21-56079.jpg" alt="Christmas recipes" style="height:10%;width:20%;">
 
-<input type="text" id="g" name="search" placeholder="Find a recipe.. "/> 
+<input type="text" id="g" name="search" placeholder="Find a recipe.. "/>
 <input type="button" id="b" value="search"/>
 
 
 
 
-<div class = "login">
 <form action="login.php" autocomplete="on">
-<p>
+<div class = "login_user">
 <label for="username" id="l">Username:</label>
 <input type="text" id="uname" placeholder="Username" name="username" required="required"><br></br>
-</p>
+</div>
+<div class="login_pass"
 <label for="pass" id="p">Password:</label>
-<input type="text" id="pass" placeholder="Password"
-name="pass" required="required">
+<input type="text" id="pass" placeholder="Password" name="pass" required="required">
 <input type="button" class="button" value="Log in" name="login"/>
 <input type="button" class ="button" value="Sign up" name="signup"/>
+</div>
 </form>
-</div>
 
 
+<div class="meni">
 <ul>
-  <li><a href="default.asp">Home</a> </li>
-  <li><a href="recipes.asp">Recipes</a> </li>
   <li><a href="holidays.asp">Holidays and Events</a> </li>
+  <li><a href="recipes.asp">Recipes</a> </li>
+  <li><a href="default.asp">Home</a> </li>
   </ul><br></br>
-  
-<p>
-  Suggestions
-  
-</p>
-<iframe width="420" height="320" src="https://www.youtube.com/watch?v=lao7-up1a6A">
-</iframe>
-
-
 </div>
+
+<div class="mapa">
+<img src="http://img.freepik.com/free-vector/christmas-dinner-food_23-2147529056.jpg?size=338&ext=jpg" usemap="#foodmap" style="width:450px;height:450px;">
+<map name="foodmap">
+  <area shape="rect" coords="0,0,150,150" href="Cookies.htm">
+  <area shape="rect" coords="0,150,150,300" href="Drinks.htm">
+  <area shape="rect" coords="0,300,150,450" href="Meat.htm">
+  <area shape="rect" coords="150,0,300,150" href="Wine.htm">
+  <area shape="rect" coords="150,300,300,450" href="Muffins.htm">
+  <area shape="rect" coords="300,0,450,150" href="Cakes.htm">
+  <area shape="rect" coords="300,150,450,300" href="Pastries.htm">
+  <area shape="rect" coords="300,300,450,450" href="Candies.htm">
+
+</map>
+</div>
+
+
 </body>
 </html>
-
-
